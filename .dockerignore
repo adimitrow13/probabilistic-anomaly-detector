@@ -1,0 +1,22 @@
+# Игнориране на виртуални среди
+.venv/
+venv/
+env/
+
+# Игнориране на кеш файлове
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Игнориране на Git и IDE служебни файлове
+.git/
+.gitignore
+.idea/
+.vscode/
+
+# Игнориране на локални логове и тестови отчети
+*.log
+.pytest_cache/
+.coverage
+htmlcov/

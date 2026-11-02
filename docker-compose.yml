@@ -1,0 +1,16 @@
+services:
+  anomaly-detector:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: anomaly_detector_app
+    ports:
+      - "8501:8501"
+    volumes:
+      # Свързване на локалните директории с контейнера за персистиране и директно обновяване (Live Reload)
+      - ./data:/app/data
+      - ./src:/app/src
+      - ./ui:/app/ui
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
