@@ -1,0 +1,42 @@
+# Байткод и временни файлове на Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Виртуални среди (Virtual Environments)
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Инструменти за разработка и IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Тестове и анализ на кода
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Големи набори от данни и локални сваляния (съхраняваме само примерни/тестови файлове)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Локални логове и конфигурации
+*.log
+.env
+.env.local
+
+# Системни файлове (macOS / Windows)
+.DS_Store
+Thumbs.db
